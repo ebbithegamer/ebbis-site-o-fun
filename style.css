@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue:300,600');
+
+* {
+  font-weight: 300;
+}
+body {
+  font-family: "Comic Neue", "Comic Sans MS", cursive;
+}
+h1, h2, h3, strong {
+  font-weight: 600;
+}
