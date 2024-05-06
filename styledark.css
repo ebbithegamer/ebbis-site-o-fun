@@ -1,0 +1,9 @@
+* {
+  font-weight: 300;
+}
+body {
+  font-family: "Comic Sans MS", cursive;
+}
+h1, h2, h3, strong {
+  font-weight: 600;
+}
