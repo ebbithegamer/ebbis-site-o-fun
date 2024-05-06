@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue&#38;display=swap">
+    <script type="text/javascript">
+    function SearchResults() {
+      var url = window.location.href;
+      var urlParams = new URLSearchParams(url.split('?')[1]);
+      var keyword = urlParams.get('keyword') || urlParams.get('q');
+      var filter = urlParams.get('f');
+      if (keyword) {
+        document.getElementById('keyword-display').innerHTML = " " + keyword;
+      }
+      if (filter) {
+        document.getElementById('filter-display').innerHTML = " (Filtered by: " + filter + ")";
+      }
+    }
+    </script>
+    <script type="text/javascript">
+    const tumblr = require('tumblr.js');
+    const client = tumblr.createClient({
+      consumer_key: 'n0vC8ADuBhKjq288wI15WaPeyyKPvNrRaxu9Iv5k8qfvcPT7AH',
+      consumer_secret: 'SU3CGH28OiNJuGkbxXdw5EV37QJjR3HUTSsxDnRSm8w8Ia0379',
+      token: 'okleWorzpoT3zHCtaMbQZi4PV7Uno9xaJ8e4lzPmesboEBcxeE',
+      token_secret: 'QaKfNCHcG9Ju4qgyJNaDRgYGdapShCATLXFLNfNAs5QkTNJolD'
+    });
+    var response = await client.taggedPosts('lol');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebbi's Site O' Fun! - Search</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body onLoad="SearchResults()">
+    <font size="0.8"><a href="/" title="Home"><h1>Ebbi's Site O' Fun!!</h1></a></font>
+    <img src="/images/catcomputer.gif" alt="Nuko Cat on a computer!" width="35" height="35"/>
+    <font size="0.8"><h2>Search:</h2></font>
+    <font size="0.8"><h2><p>Search results for:<span id="keyword-display"></span><span id="filter-display"></span></p></h2></font>
+    <font size="0.8"><h1><p>Search is currently going under work, once done it'll search through my Tumblr for whatever it is you're looking for!</p></h1></font>
+    <font size="0.5"><div>Want to see something cool? Check out <a href="https://ebbiisback.tumblr.com" title="A link to a blog called Ebbi's Blog O' Fun!">Ebbi's Blog O' Fun!</a></div></font>
+  </body>
+</html>
