@@ -1,0 +1,96 @@
+body {
+    background-image: url('/images/background.gif');
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#border-frame {
+    background: linear-gradient(135deg, #0000ff 0%, #88aaff 50%, #0000ff 100%);
+    padding: 3px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+#wrapper {
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(220,235,255,0.9) 100%);
+    max-width: 700px;
+    width: 95%;
+    border: 3px double #0000ff;
+    padding: 20px;
+    box-shadow: 0px 0px 20px Grey;
+    box-sizing: border-box;
+    display: block;
+}
+
+#header-area {
+    background: linear-gradient(to bottom, #ffffff 0%, #f0f5ff 45%, #dbe9ff 50%, #c6dcff 100%);
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #0000ff;
+    box-shadow: inset 0 1px 0 #fff;
+}
+
+#main-banner {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.full-nav-bar {
+    background: linear-gradient(to bottom, #2b57ff 0%, #0022aa 100%);
+    border-top: 1px solid #ffffff55;
+    padding-bottom: 5px;
+}
+
+#top-nav {
+    /* background: linear-gradient(to bottom, #2b57ff 0%, #0022aa 100%); */
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#top-nav a {
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 1.5px 1.5px 0px #000000;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #ffffff55 0%, #ffffff22 50%, #00000022 50%, #00000044 100%);
+    padding: 4px 10px;
+    border-radius: 1px;
+}
+
+#top-nav a:hover {
+    color: #ddd;
+    background: linear-gradient(to top, #ffffff44 0%, #00000044 100%);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#search-nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+.search, .filter, .button {
+    font-family: "Comic Sans MS", "Segoe UI", "MS Sans Serif", Geneva, sans-serif;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.search {
+    border: 1px solid #777;
+    border-radius: 3px;
+    padding: 2px 5px;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}

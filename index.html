@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue&#38;display=swap">
-    <script>
+  <script>
     const gohome = document.querySelector(".button");
     gohome.addEventListener("click", function(event) {
     event.preventDefault();
     const redirectURL = "/";
     window.location.href = redirectURL;
     });
-    </script>
+  </script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.485">
   <title>Ebbi's Site O' Fun!</title>
-  <link id="ctl00_Imports" rel="stylesheet" type="text/css" href="https://web.archive.org/web/20080709114037cs_/http://www.roblox.com/CSS/AllCSS.ashx">
-    <link href="/stylecomic.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/AllCSS.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/2000s.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
+  <bgsound src="/audio/bgm.mid" loop="infinite">
+  <div id="wrapper">
+  <div id="header-area">
+    <img src="/images/Banner.png" alt="Ebbi's Site O' Fun!!" id="main-banner">
+    <div class="full-nav-bar">
+        <nav id="top-nav">
+            <a href="/" class="nav-btn">HOME</a>
+            <a href="/about" class="nav-btn">ABOUT</a>
+            <a href="/blog" class="nav-btn">BLOG</a>
+            <a href="/info" class="nav-btn">INFO</a>
+            <a href="/ircwebchat" class="nav-btn">IRC CHAT</a>
+        </nav>
+
+        <nav id="search-nav">
+            <form action="/search" method="get" class="sfm" name="search">
+                <input class="search" type="text" placeholder="o(*￣▽￣*)ブ" name="q">
+                <button type="submit" class="button">Search!!</button>
+                <select class="filter" name="f">
+                    <option value="" selected="">Filter</option>
+                    <option value="Current">Current</option>
+                    <option value="Archived">Archived</option>
+                    <option value="Cancelled">Cancelled</option>
+                    <option value="Testing">Testing</option>
+                </select> 
+                <img src="/images/catcomputer.gif" alt="Nuko Cat" style="vertical-align: middle;"/>
+            </form>
+        </nav>
+    </div>
+    </div>
     <font size="+0.5"><h1>Welcome to Ebbi's Site O' Fun!!</h1></font>
     <img src="/images/catwave.gif" alt="Nuko Cat waving!" width="35" height="35">
-    <font size="+1.5"><p>This site is currently under work, updates will now be daily!</p></font>
-    <form action="/search" method="get" class="sfm" name="search">
-    <input class="search" type="text" placeholder="o(*￣▽￣*)ブ" name="q" onfocus="this.placeholder = ''" onblur="this.placeholder = 'o(*￣▽￣*)ブ'">
-    <button action="/search" method="get" class="button">Search!!</button>
-    <select class="filter" name="f"><option value="" selected="">Filter</option><option value="">Default (None)</option><option value="Current">Current</option><option value="Archived">Archived</option><option value="Cancelled">Cancelled</option><option value="Testing">Testing</option></select> <img src="/images/catcomputer.gif" alt="Nuko Cat on a computer!"/>
-    </form>
-    <font size="+0.2"><div>Wanna keep up with what I'm doing? Check out <a href="https://ebbiisback.tumblr.com" title="A link to a blog called Ebbi's Blog O' Fun!">Ebbi's Blog O' Fun!</a></div></font>
-    <font size="+0.2"><a href="/about" title="About">About</a> | <a href="/info" title="Info">Info</a> | <a href="/blog" title="Blog">Blog</a> | <a href="/comicsansms" title="CSMS Test">Comic Sans MS Test!?</a> | <a href="/games" title="Games">Games</a></font>
+    <font size="+1.5"><marquee>This site is currently under work!</marquee></font>
+    <font size="+1.5"><p>UPDATE 4/9/2026: I'm back after 3 years!! This website will soon be seeing an overhaul, so stay tuned! :3</p></font>
+    <font size="+1.5"><p>UPDATE 5/1/2026: Proper mobile support is here (sorta)! The site should display properly on mobile... for the most part! The blog and search are in the works, and should be done soon! Thanks for sticking around! (⁠｡⁠･⁠ω⁠･⁠｡⁠)⁠ﾉ⁠♡</p></font>
+    <font size="+1"><time>Time for me!</time></font>
+    <br>
+    <img src="http://obswww.unige.ch/cgi-bin/Count.cgi?df=malkiat.dat|display=Clock|timezone=GMT-0.70|tformat=24|ft=4|md=5|frgb=00;85;180|dd=B">
+    <br>
+    <br>
+    <font size="+1"><time>Time in Tokyo</time></font>
+    <br>
+    <img src="http://obswww.unige.ch/cgi-bin/Count.cgi?df=malkiat.dat|display=Clock|timezone=GMT+0.80|tformat=24|ft=4|md=5|frgb=00;85;180|dd=B">
+    <br>
+    <br>
+    <font size="+1"><time>Worldwide / Central Time</time></font>
+    <br>
+    <img src="http://obswww.unige.ch/cgi-bin/Count.cgi?df=malkiat.dat|display=Clock|tformat=24|ft=4|md=5|frgb=00;85;180|dd=B">
+    <br>
+    <br>
+    <a href='https://www.counters-free.net/'>counter-FREE</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=280f8d2e667c8e359ef7b08af1831b0fdc50f3f4'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1532767/t/1"></script>
+    <br>
+    <br>
+    <img src="https://oldavista.com/assets/800x600.gif" alt="Hi-Colors"><a href="https://web.archive.org/web/20130813125708/http://www.microsoft.com/en-ca/download/internet-explorer.aspx" target="_blank"><img src="https://theoldnet.com/images/iexplorer.gif" alt="Get Microsoft Internet Explorer"></a><a href="https://neocities.org" target="_blank"><img src="https://theoldnet.com/images/gc_icon.gif" alt="Geocities"></a><a href="https://web.archive.org/web/20090101120702/http://www.w3.org/" target="_blank"><img src="https://theoldnet.com/images/w3c.gif" alt="HTML 4.0"></a>
+  </div>
   </body>
 </html>
